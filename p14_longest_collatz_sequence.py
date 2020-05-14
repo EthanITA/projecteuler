@@ -17,7 +17,6 @@ NOTE: Once the chain starts the terms are allowed to go above one million.
 """
 
 
-
 # Problema: definire la regola di Colatz
 
 
@@ -32,13 +31,6 @@ def colatz(n):
         return __even(n)
     else:
         return __odd(n)
-
-    """   
-    # Invece di if-else
-    return _even(n) * (1 - (n % 2)) + _odd(n) * (n % 2)
-    return _even(n) - ((n % 2) * _even(n)) + (_odd(n) * n % 2)
-    return _even(n) + (n % 2) * (_odd(n) - _even(n)) 
-    """
 
 
 # Problema: funzione che genera la sequenza di Colatz partendo da n
@@ -93,6 +85,5 @@ def longest_colatz_sequence_under_optimized_2(n):
 
 
 if __name__ == "__main__":
-    
-    print(longest_colatz_sequence_under_optimized_2(1000000))
 
+    print(longest_colatz_sequence_under_optimized_2(1000000))

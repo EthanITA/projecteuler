@@ -64,15 +64,6 @@ def divisors2(n, primes, result=[]):
         if (n % i is 0) and (n // i not in result):
             divisors2(n // i, primes, result)
 
-    # while n >= 1:
-    #     newn = n
-    #     for i in primes:
-    #         while newn >= 1:
-    #             for i in primes:
-    #                 if (newn % i is 0) and (newn // i not in result):
-    #                     result.append(newn // i)
-    #                     newn //= i
-
     return result
 
     # primes = primes_divisors(n)
@@ -83,7 +74,6 @@ def divisors2(n, primes, result=[]):
 
 
 if __name__ == "__main__":
-    
 
     i = 1
     n = triangle_numbers(i)

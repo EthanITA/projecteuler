@@ -28,10 +28,6 @@ def array_to_int(array):
 def strings_sum(s):
     """ Given an array of strings of integers, the function will return their sum in string """
     s = array_to_int(s)
-    # result = 0
-    # for i in s:
-    #     result += i
-    # return str(result)
     return str(sum(s))
 
 

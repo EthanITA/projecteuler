@@ -13,11 +13,11 @@ def divisors(n):
             result.append(i)
     return result
 
-def d(n):
+def sum_of_divisors(n):
     return sum(divisors(n))
 
 def amicable(a, b):
-    if a != b and d(b) == a:
+    if a != b and sum_of_divisors(b) == a:
         return True
     else:
         return False
@@ -28,7 +28,7 @@ def amicable_numbers_under(n):
     amicable_numbers = []
     for a in range(1, n):
         if a not in amicable_numbers:
-            b = d(a)
+            b = sum_of_divisors(a)
             if amicable(a, b):
                 amicable_numbers.append(a)
                 amicable_numbers.append(b)

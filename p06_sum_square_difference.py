@@ -27,4 +27,6 @@ def square_of_sum_of_firsts(n):
     return result ** 2
 
 
-print(abs(sum_of_squares_of_firsts(100) - square_of_sum_of_firsts(100)))
+if __name__ == "__main__":
+
+    print(abs(sum_of_squares_of_firsts(100) - square_of_sum_of_firsts(100)))

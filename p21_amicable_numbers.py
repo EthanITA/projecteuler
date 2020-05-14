@@ -34,5 +34,7 @@ def amicable_numbers_under(n):
                 amicable_numbers.append(b)
     return amicable_numbers
 
-#print(amicable(284, 220))
-print(sum(amicable_numbers_under(10000)))
+if __name__ == "__main__":
+    
+    #print(amicable(284, 220))
+    print(sum(amicable_numbers_under(10000)))

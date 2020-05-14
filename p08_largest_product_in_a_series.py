@@ -63,4 +63,6 @@ def product_adjacents_of(n):
     return max(products)
 
 
-print(product_adjacents_of(13))
+if __name__ == "__main__":
+
+    print(product_adjacents_of(13))

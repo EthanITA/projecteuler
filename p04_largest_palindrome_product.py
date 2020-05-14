@@ -6,16 +6,12 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 """
 
 
-def reversed_string(s=""):
-    t = ""
-    for i in range(0, len(s)):
-        t += s[len(s) - 1 - i]
-    return t
+from util import rev
 
 
 def parlindromic(s):
     s = str(s)
-    if (s == reversed_string(s)):
+    if (s == rev(s)):
         return True
     else:
         return False
@@ -31,4 +27,5 @@ def largest_n_digit_palindr(n=0):
     return max(a)
 
 
-print(largest_n_digit_palindr(3))
+if __name__ == "__main__":
+    print(largest_n_digit_palindr(3))

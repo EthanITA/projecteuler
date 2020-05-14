@@ -5,7 +5,7 @@
 The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
 Find the sum of all the primes below two million.
 """
-from largest_prime_factor import wikipedia_primality_test
+from util import wikipedia_primality_test
 
 
 def sum_primes_below(n):
@@ -16,4 +16,6 @@ def sum_primes_below(n):
     return summation
 
 
-print(sum_primes_below(2000000))
+if __name__ == "__main__":
+
+    print(sum_primes_below(2000000))

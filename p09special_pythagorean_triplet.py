@@ -34,4 +34,6 @@ def find_triplet(d=1000):
         c += 1
 
 
-print(find_triplet(1000))
+if __name__ == "__main__":
+
+    print(find_triplet(1000))

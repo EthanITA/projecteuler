@@ -34,3 +34,7 @@ File starting with underscore means to complete
 #### 20) Factorial digit sum
 ---
 #### 21) Amicable numbers
+#### 22)
+#### 23)
+#### 24) Lexicographic permutations
+#### 25) 1000-digit Fibonacci number

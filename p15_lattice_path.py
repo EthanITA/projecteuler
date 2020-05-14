@@ -75,8 +75,9 @@ class LatticePath():
     def __str__(self):
         return str(self.__matrix)
 
+if __name__ == "__main__":
+    
+    lattice = LatticePath(20)
 
-lattice = LatticePath(20)
-
-print(lattice)
-print(lattice.get_number_of_routes())
+    print(lattice)
+    print(lattice.get_number_of_routes())

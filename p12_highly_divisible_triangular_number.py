@@ -82,17 +82,20 @@ def divisors2(n, primes, result=[]):
     #         while n % i == 0:
 
 
-i = 1
-n = triangle_numbers(i)
-n_div = len(divisors2(n, primes_divisors(n)))
-while n_div <= 500:
-    print(i, n, n_div)
-    i += 1
+if __name__ == "__main__":
+    
+
+    i = 1
     n = triangle_numbers(i)
-    n_div = len(divisors2(n, primes_divisors(n), []))
+    n_div = len(divisors2(n, primes_divisors(n)))
+    while n_div <= 500:
+        print(i, n, n_div)
+        i += 1
+        n = triangle_numbers(i)
+        n_div = len(divisors2(n, primes_divisors(n), []))
 
-print(n)
-# print((divisors2(5007953160, primes_divisors(5007953160))))
+    print(n)
+    # print((divisors2(5007953160, primes_divisors(5007953160))))
 
-end = time.time()
-print(end - start)
+    end = time.time()
+    print(end - start)

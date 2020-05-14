@@ -19,5 +19,6 @@ def fact(n):
         return 1
     else:
         return n*fact(n-1)
-
-print(sum_of_digits(fact(100)))
+if __name__ == "__main__":
+    
+    print(sum_of_digits(fact(100)))

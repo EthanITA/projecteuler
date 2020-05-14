@@ -35,8 +35,10 @@ def strings_sum(s):
     return str(sum(s))
 
 
-# Numbers of the problem are stored in Problem_13.txt
-f = open("large_sum.txt", "r")
-digits = f.read().split()
+if __name__ == "__main__":
+        
+    # Numbers of the problem are stored in Problem_13.txt
+    f = open("txt/large_sum.txt", "r")
+    digits = f.read().split()
 
-print(strings_sum(digits))
+    print(strings_sum(digits))

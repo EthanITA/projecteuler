@@ -14,9 +14,11 @@ def multiples(m, max):
     return m * (max * (max + 1) // 2)
 
 
-m_three = multiples(3, 10)
-m_five = multiples(5, 10)
-# remove duplicates
-mcd = multiples(5 * 3, 10)
+if __name__ == "__main__":
 
-print(m_three + m_five - mcd)
+    m_three = multiples(3, 10)
+    m_five = multiples(5, 10)
+    # remove duplicates
+    mcd = multiples(5 * 3, 10)
+
+    print(m_three + m_five - mcd)

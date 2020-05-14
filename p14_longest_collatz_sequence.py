@@ -16,9 +16,7 @@ Which starting number, under one million, produces the longest chain?
 NOTE: Once the chain starts the terms are allowed to go above one million.
 """
 
-import time
 
-start = time.time()
 
 # Problema: definire la regola di Colatz
 
@@ -94,7 +92,7 @@ def longest_colatz_sequence_under_optimized_2(n):
     return result.index(max(result))
 
 
-print(longest_colatz_sequence_under_optimized_2(1000000))
+if __name__ == "__main__":
+    
+    print(longest_colatz_sequence_under_optimized_2(1000000))
 
-end = time.time()
-print(end - start)

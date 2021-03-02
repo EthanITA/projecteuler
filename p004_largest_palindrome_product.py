@@ -9,7 +9,7 @@ from my_libs.my_funcs import is_palidrome
 
 
 def solve_tree_naive(product_tree=BinaryTree().insert_values(999, 999)):
-    if is_palidrome(product_tree.get_product()):
+    if is_palidrome(product_tree.value_product):
         return product_tree.value
     else:
         n1, n2 = product_tree.value
@@ -25,8 +25,8 @@ def solve_tree(product_tree=BinaryTree().insert_values(999, 999), left=False):
     :param left:
     :return:
     """
-    if is_palidrome(product_tree.get_product()):
-        return product_tree.get_product(), product_tree.value
+    if is_palidrome(product_tree.value_product):
+        return product_tree.value_product, product_tree.value
     else:
         n1, n2 = product_tree.value
         if n1 == n2:

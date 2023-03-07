@@ -1,4 +1,4 @@
-## Project Euler 
+## Project Euler
 All problems come from https://projecteuler.net/archives
 
 ---
